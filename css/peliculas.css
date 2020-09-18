@@ -1,0 +1,30 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.logo{
+    padding: 20px;
+}
+.header{
+    display: grid;
+    grid-template-columns: 5% 80% 15%;
+    background-color: black;
+    color: whitesmoke;
+}
+.headerIzquierda{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+.barraDeNavegacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    padding: 20px 0px 20px 0px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.headerDerecha{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
