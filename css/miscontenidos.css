@@ -28,3 +28,20 @@ a{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+footer{
+    display: grid;
+    grid-template-rows: 2;
+    background-color: black;
+    color: whitesmoke;
+}
+.nombres{
+    display: flex;
+    justify-content: space-between;
+}
+.contacto{
+    text-align: center;
+    color: whitesmoke;
+}
+.redesSociales{
+    text-align: center;
+}
