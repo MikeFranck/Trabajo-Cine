@@ -1,0 +1,75 @@
+body{
+    background-color: grey;
+    margin: 0px;
+    padding: 0px;
+}
+.logo{
+    padding: 20px;
+}
+.header{
+    display: grid;
+    grid-template-columns: 5% 80% 15%;
+    background-color: black;
+    color: whitesmoke;
+}
+.headerIzquierda{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+.barraDeNavegacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    padding: 20px 0px 20px 0px;
+}
+.a{
+    color: white;
+    text-decoration: none;
+}
+.headerDerecha{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer{
+    display: grid;
+    grid-template-rows: 2;
+    background-color: black;
+    color: whitesmoke;
+}
+.nombres{
+    display: flex;
+    justify-content: space-between;
+}
+.contacto{
+    text-align: center;
+    color: whitesmoke;
+}
+.redesSociales{
+    text-align: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: 15% 85%;
+
+}
+.img{
+    width: 250px;
+    padding: 10px;
+    object-fit: cover;
+}
+.titulo{
+    text-decoration: underline; 
+}
+.info{
+    display: grid;
+    grid-template-rows: auto;
+}
+.info2{
+    font-size: 23px;
+}
+.config{
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
