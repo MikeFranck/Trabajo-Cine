@@ -5,62 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/peliculas.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="uikit/css/uikit.css">
 </head>
 <body>
-    <header class="header">
-        <section class="logo">
-            <img class="Logo" src="" alt="Logo">
-        </section>
-        <section class="barraDeNavegacion">
-            <nav>
-                <a href="home.html">Inicio</a>
-            </nav>
-            <nav>
-                <a href="peliculas.html">Peliculas</a>
-            </nav>
-            <nav>
-                <a href="series.html">Series</a>
-           </nav>
-            <nav>
-                <a href="generos.html">Generos</a>
-            </nav>
-            <nav>
-                <a href="miscontenidos.html">Mis contenidos</a>
-            </nav>
-        </section>
-        <section class="headerDerecha">
-            <input type="search" class="buscador" placeholder="Buscar">
-        </section>
+    <header class="header1">
+
+        <nav class="uk-navbar-container uk-margin" uk-navbar>
+
+            <div class="nav-overlay uk-navbar-left">
+        
+                <a class="uk-navbar-item uk-logo" href="home.html">FAKE NETFLIX</a>
+        
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="peliculas.html">Peliculas</a></li>
+                    <li><a href="series.html">Series</a></li>
+                    <li><a href="generos.html">Generos</a></li>
+                    <li><a href="MisContenidos.html">Mis Contenidos</a></li>
+                </ul>
+            </div>
+           
+
+            <div class="nav-overlay uk-navbar-right">
+        
+                <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+        
+            </div>
+        
+            <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+        
+                <div class="uk-navbar-item uk-width-expand">
+                    <form class="uk-search uk-search-navbar uk-width-1-1">
+                        <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                    </form>
+                </div>
+        
+                <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+        
+            </div>
+        
+        </nav>
+        
     </header>
 
 
 
-
-    
-    <footer>
-        <div class="nombres">
-            <p>Michael Franck</p>
-            <p>Simon Gazzera</p>
-            <p>Nicolas Cavalieri</p>
-        </div>
-        <div class="contacto">
-            <a href="mailto:mnspeliculas@gmail.com">Contacto</a>
-        </div>
-        <div class="redesSociales">
-            <a href="https://es-la.facebook.com">
-                <img src="imagenes/facebook.png" alt="facebook">
-            </a>
-            <a href="https://twitter.com/?lang=es">
-                <img src="imagenes/twitter.png" alt="twitter">
-            </a>
-            <a href="https://www.youtube.com/">
-                <img src="imagenes/youtube.png" alt="youtube">
-            </a>
-            <a href="https://www.instagram.com/accounts/login/">
-                <img src="imagenes/instagram.png" alt="instagram">
-            </a>
-        </div>
-    </footer>
 <section class="container">
     <article class="img">
         <img src="imagenes/Contra lo imposible.jpg" class="img" alt="pelicula">
@@ -70,6 +59,7 @@
     
     <h3 class="info2"> año pelicula duracion</h3>
     <h3 class="info2"> descripcion</h3>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates fugit minus maiores dicta numquam, veritatis consectetur ipsum architecto similique velit cupiditate sapiente. Aspernatur distinctio alias id eaque, ut nulla quibusdam consequuntur sapiente! Itaque reiciendis accusantium, totam voluptates maiores molestias reprehenderit error nulla, natus doloremque delectus exercitationem modi non! Numquam, quis!
     <h3 class="info2">Director</h3>
     <h3 class="info2">Genero</h3>
     <h3 class="info2">Actores</h3>
@@ -83,5 +73,34 @@
     </article>
    
 </section>
+
+<footer>
+    <div class="nombres">
+        <p>Michael Franck</p>
+        <p>Simon Gazzera</p>
+        <p>Nicolas Cavalieri</p>
+    </div>
+    <div class="contacto">
+        <a href="mailto:mnspeliculas@gmail.com">Contacto</a>
+    </div>
+    <div class="redesSociales">
+        <a href="https://es-la.facebook.com">
+            <img src="imagenes/facebook.png" alt="facebook">
+        </a>
+        <a href="https://twitter.com/?lang=es">
+            <img src="imagenes/twitter.png" alt="twitter">
+        </a>
+        <a href="https://www.youtube.com/">
+            <img src="imagenes/youtube.png" alt="youtube">
+        </a>
+        <a href="https://www.instagram.com/accounts/login/">
+            <img src="imagenes/instagram.png" alt="instagram">
+        </a>
+    </div>
+</footer>
+
+<script type="text/javascript" src='uikit/js/uikit.js'></script>
+<script src="https://kit.fontawesome.com/e32b1dc814.js"></script> 
+
 </body>
 </html>

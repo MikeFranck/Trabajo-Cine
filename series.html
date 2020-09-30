@@ -5,33 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/series.css">
+    <link rel="stylesheet" href="uikit/css/uikit.css">
 </head>
 <body>
-    <header class="header">
-        <section class="logo">
-            <img class="Logo" src="" alt="Logo">
-        </section>
-        <section class="barraDeNavegacion">
-            <nav>
-                <a href="home.html">Inicio</a>
-            </nav>
-            <nav>
-                <a href="peliculas.html">Peliculas</a>
-            </nav>
-            <nav>
-                <a href="series.html">Series</a>
-           </nav>
-            <nav>
-                <a href="generos.html">Generos</a>
-            </nav>
-            <nav>
-                <a href="miscontenidos.html">Mis contenidos</a>
-            </nav>
-        </section>
-        <section class="headerDerecha">
-            <input type="search" class="buscador" placeholder="Buscar">
-        </section>
+    <header class="header1">
+
+        <nav class="uk-navbar-container uk-margin" uk-navbar>
+
+            <div class="nav-overlay uk-navbar-left">
+        
+                <a class="uk-navbar-item uk-logo" href="home.html">FAKE NETFLIX</a>
+        
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="peliculas.html">Peliculas</a></li>
+                    <li><a href="series.html">Series</a></li>
+                    <li><a href="generos.html">Generos</a></li>
+                    <li><a href="MisContenidos.html">Mis Contenidos</a></li>
+                </ul>
+            </div>
+           
+
+            <div class="nav-overlay uk-navbar-right">
+        
+                <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+        
+            </div>
+        
+            <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+        
+                <div class="uk-navbar-item uk-width-expand">
+                    <form class="uk-search uk-search-navbar uk-width-1-1">
+                        <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                    </form>
+                </div>
+        
+                <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+        
+            </div>
+        
+        </nav>
+        
     </header>
+
 
 
 
