@@ -3,75 +3,415 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/generos.css">
+    <title>Generos</title>
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="uikit/css/uikit.css">
+
 </head>
 <body>
-    <header class="header">
-        <section class="logo">
-            <img class="Logo" src="" alt="Logo">
-        </section>
-        <section class="barraDeNavegacion">
-            <nav>
-                <a href="home.html">Inicio</a>
-            </nav>
-            <nav>
-                <a href="peliculas.html">Peliculas</a>
-            </nav>
-            <nav>
-                <a href="series.html">Series</a>
-           </nav>
-            <nav>
-                <a href="generos.html">Generos</a>
-            </nav>
-            <nav>
-                <a href="miscontenidos.html">Mis contenidos</a>
-            </nav>
-        </section>
-        <section class="headerDerecha">
-            <input type="search" class="buscador" placeholder="Buscar">
-        </section>
+    <header class="header1">
+
+        <nav class="uk-navbar-container uk-margin" uk-navbar>
+
+            <div class="nav-overlay uk-navbar-left">
+        
+                <a class="uk-navbar-item uk-logo" href="home.html">FAKE NETFLIX</a>
+        
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="peliculas.html">Peliculas</a></li>
+                    <li><a href="series.html">Series</a></li>
+                    <li><a href="generos.html">Generos</a></li>
+                    <li><a href="MisContenidos.html">Mis Contenidos</a></li>
+                </ul>
+            </div>
+           
+
+            <div class="nav-overlay uk-navbar-right">
+        
+                <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+        
+            </div>
+        
+            <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+        
+                <div class="uk-navbar-item uk-width-expand">
+                    <form class="uk-search uk-search-navbar uk-width-1-1">
+                        <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                    </form>
+                </div>
+        
+                <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+        
+            </div>
+        
+        </nav>
+        
     </header>
-<section>
-<br>
-<br>
-    <div class="genero">
-        <div class="genero">Comedia</div>
-        <div class="genero">Romance</div>
-        <div class="genero">Accion</div>
-        <div class="genero">Suspenso</div>
-        <div class="genero">Terror</div>
-        <div class="genero">Drama</div>
-        <div class="genero">Kids</div>
-        <div class="genero">Misterio</div>
+
+
+<!-- SLIDER ACCION -->
+
+    <h2>Accion</h2> 
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+            <li>
+                <img src="imagenes/El Angel.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>1</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/El Mediador.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>2</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/El Robo del Siglo.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>3</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/Godfather Of Harlem.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>4</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/Homeland.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>5</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/La odisea de los Giles.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>6</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/Nacido Para ser Rey.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>7</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/Outcast.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>8</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/Rocketman.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>9</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/Amigos con Derechos.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>10</h1></div>
+            </li>
+
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
     </div>
-</section>
 
 
-    <footer>
-        <div class="nombres">
-            <p>Michael Franck</p>
-            <p>Simon Gazzera</p>
-            <p>Nicolas Cavalieri</p>
-        </div>
-        <div class="contacto">
-            <a href="mailto:mnspeliculas@gmail.com">Contacto</a>
-        </div>
-        <div class="redesSociales">
-            <a href="https://es-la.facebook.com">
-                <img src="imagenes/facebook.png" alt="facebook">
-            </a>
-            <a href="https://twitter.com/?lang=es">
-                <img src="imagenes/twitter.png" alt="twitter">
-            </a>
-            <a href="https://www.youtube.com/">
-                <img src="imagenes/youtube.png" alt="youtube">
-            </a>
-            <a href="https://www.instagram.com/accounts/login/">
-                <img src="imagenes/instagram.png" alt="instagram">
-            </a>
-        </div>
-    </footer>
+    <!-- SLIDER DE AVENTURAS -->
+
+    <h2>Aventuras</h2> 
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+            <li>
+                <img src="imagenes/El Angel.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>1</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/El Mediador.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>2</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/El Robo del Siglo.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>3</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/Godfather Of Harlem.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>4</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/Homeland.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>5</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/La odisea de los Giles.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>6</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/Nacido Para ser Rey.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>7</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/Outcast.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>8</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/Rocketman.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>9</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/Amigos con Derechos.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>10</h1></div>
+            </li>
+
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+
+
+<!-- SLIDER COMEDIAS -->
+<h2>Comedias</h2> 
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+            <li>
+                <img src="imagenes/El Angel.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>1</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/El Mediador.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>2</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/El Robo del Siglo.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>3</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/Godfather Of Harlem.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>4</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/Homeland.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>5</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/La odisea de los Giles.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>6</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/Nacido Para ser Rey.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>7</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/Outcast.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>8</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/Rocketman.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>9</h1></div>
+            </li>
+            <li>
+                <img src="imagenes/Amigos con Derechos.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>10</h1></div>
+            </li>
+
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+
+
+    <!-- SLIDER ROMANCE -->
+<h2>Romance</h2> 
+
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+        <li>
+            <img src="imagenes/El Angel.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>1</h1></div>
+        </li>
+        <li>
+            <img src="imagenes/El Mediador.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>2</h1></div>
+        </li>
+        <li>
+            <img src="imagenes/El Robo del Siglo.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>3</h1></div>
+        </li>
+        <li>
+            <img src="imagenes/Godfather Of Harlem.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>4</h1></div>
+        </li>
+        <li>
+            <img src="imagenes/Homeland.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>5</h1></div>
+        </li>
+        <li>
+            <img src="imagenes/La odisea de los Giles.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>6</h1></div>
+        </li>
+        <li>
+            <img src="imagenes/Nacido Para ser Rey.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>7</h1></div>
+        </li>
+        <li>
+            <img src="imagenes/Outcast.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>8</h1></div>
+        </li>
+        <li>
+            <img src="imagenes/Rocketman.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>9</h1></div>
+        </li>
+        <li>
+            <img src="imagenes/Amigos con Derechos.jpg" alt="">
+            <div class="uk-position-center uk-panel"><h1>10</h1></div>
+        </li>
+
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+</div>
+
+
+
+   <!-- SLIDER SUSPENSO -->
+   <h2>Suspenso</h2> 
+
+   <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+   
+       <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+           <li>
+               <img src="imagenes/El Angel.jpg" alt="">
+               <div class="uk-position-center uk-panel"><h1>1</h1></div>
+           </li>
+           <li>
+               <img src="imagenes/El Mediador.jpg" alt="">
+               <div class="uk-position-center uk-panel"><h1>2</h1></div>
+           </li>
+           <li>
+               <img src="imagenes/El Robo del Siglo.jpg" alt="">
+               <div class="uk-position-center uk-panel"><h1>3</h1></div>
+           </li>
+           <li>
+               <img src="imagenes/Godfather Of Harlem.jpg" alt="">
+               <div class="uk-position-center uk-panel"><h1>4</h1></div>
+           </li>
+           <li>
+               <img src="imagenes/Homeland.jpg" alt="">
+               <div class="uk-position-center uk-panel"><h1>5</h1></div>
+           </li>
+           <li>
+               <img src="imagenes/La odisea de los Giles.jpg" alt="">
+               <div class="uk-position-center uk-panel"><h1>6</h1></div>
+           </li>
+           <li>
+               <img src="imagenes/Nacido Para ser Rey.jpg" alt="">
+               <div class="uk-position-center uk-panel"><h1>7</h1></div>
+           </li>
+           <li>
+               <img src="imagenes/Outcast.jpg" alt="">
+               <div class="uk-position-center uk-panel"><h1>8</h1></div>
+           </li>
+           <li>
+               <img src="imagenes/Rocketman.jpg" alt="">
+               <div class="uk-position-center uk-panel"><h1>9</h1></div>
+           </li>
+           <li>
+               <img src="imagenes/Amigos con Derechos.jpg" alt="">
+               <div class="uk-position-center uk-panel"><h1>10</h1></div>
+           </li>
+   
+       </ul>
+   
+       <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+       <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+   
+   </div>
+
+   <!-- SLIDER TERROR -->
+   <h2>Terror</h2> 
+
+   <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+   
+       <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+           <li>
+               <img src="imagenes/El Angel.jpg" alt="">
+               <div class="uk-position-center uk-panel"><h1>1</h1></div>
+           </li>
+           <li>
+               <img src="imagenes/El Mediador.jpg" alt="">
+               <div class="uk-position-center uk-panel"><h1>2</h1></div>
+           </li>
+           <li>
+               <img src="imagenes/El Robo del Siglo.jpg" alt="">
+               <div class="uk-position-center uk-panel"><h1>3</h1></div>
+           </li>
+           <li>
+               <img src="imagenes/Godfather Of Harlem.jpg" alt="">
+               <div class="uk-position-center uk-panel"><h1>4</h1></div>
+           </li>
+           <li>
+               <img src="imagenes/Homeland.jpg" alt="">
+               <div class="uk-position-center uk-panel"><h1>5</h1></div>
+           </li>
+           <li>
+               <img src="imagenes/La odisea de los Giles.jpg" alt="">
+               <div class="uk-position-center uk-panel"><h1>6</h1></div>
+           </li>
+           <li>
+               <img src="imagenes/Nacido Para ser Rey.jpg" alt="">
+               <div class="uk-position-center uk-panel"><h1>7</h1></div>
+           </li>
+           <li>
+               <img src="imagenes/Outcast.jpg" alt="">
+               <div class="uk-position-center uk-panel"><h1>8</h1></div>
+           </li>
+           <li>
+               <img src="imagenes/Rocketman.jpg" alt="">
+               <div class="uk-position-center uk-panel"><h1>9</h1></div>
+           </li>
+           <li>
+               <img src="imagenes/Amigos con Derechos.jpg" alt="">
+               <div class="uk-position-center uk-panel"><h1>10</h1></div>
+           </li>
+   
+       </ul>
+   
+       <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+       <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+   
+   </div>
+
+
+
+
+
+
+   <footer>
+    <div class="nombres">
+        <p>Michy Francky</p>
+        <p>Simon Gazzera</p>
+        <p>Nicolas Cavalieri</p>
+    </div>
+    <div class="contacto">
+        <a href="mailto:mnspeliculas@gmail.com">Contacto</a>
+    </div>
+    <div class="redesSociales">
+        <a href="https://es-la.facebook.com">
+            <img src="imagenes/facebook.png" alt="facebook">
+        </a>
+        <a href="https://twitter.com/?lang=es">
+            <img src="imagenes/twitter.png" alt="twitter">
+        </a>
+        <a href="https://www.youtube.com/">
+            <img src="imagenes/youtube.png" alt="youtube">
+        </a>
+        <a href="https://www.instagram.com/accounts/login/">
+            <img src="imagenes/instagram.png" alt="instagram">
+        </a>
+    </div>
+</footer>
+
+<script type="text/javascript" src='uikit/js/uikit.js'></script>
+<script src="https://kit.fontawesome.com/e32b1dc814.js"></script> 
+
 </body>
 </html>
