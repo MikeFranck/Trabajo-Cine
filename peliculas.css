@@ -53,12 +53,13 @@ body{
 
 }
 .img{
-    width: 250px;
+    width: 280px;
     padding: 10px;
     object-fit: cover;
 }
 .titulo{
     text-decoration: underline; 
+    font-size: 40px;
 }
 .info{
     display: grid;
@@ -66,10 +67,31 @@ body{
 }
 .info2{
     font-size: 23px;
+    color: black;
+}
+.duracion{
+    font-size: 12px;
+    color: black;
 }
 .config{
     margin-left: 20px;
     display: flex;
     justify-content: space-between;
 
+}
+.extra{
+    display: grid;
+    grid-template-columns: 1fr ;
+    padding: 20px 0px 20px 0px;
+    margin-left: 280px;
+}
+.imgextra{
+    width: 450px;
+    height: 250px;
+    padding: 10px;
+    object-fit: cover;
+}
+.p{
+    font-size: 20px;
+    color: black;
 }
