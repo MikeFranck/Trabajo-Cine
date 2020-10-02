@@ -67,7 +67,8 @@ body{
 }
 .info{
     display: grid;
-    grid-template-rows: auto    ;
+    grid-template-rows: auto;
+    margin-left: 20px;
 }
 .info2{
     font-size: 23px;
