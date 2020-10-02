@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
+    background-color: grey;
 }
 .logo{
     padding: 20px;
@@ -28,6 +29,64 @@ a{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.contenido{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.info{
+    margin-left: 20px;
+}
+.genero{
+    color: black;
+}
+.elenco{
+    color: black;
+}
+.resumen{
+    color: black;
+}
+.acciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+iframe{
+    text-align: center;
+    align-items: center;
+}
+.teleretro{
+    width: 200px;
+}
+.temp-ep{
+    display: flex;
+}
+li{
+    color: black;
+}
+.selecionarTemporada{
+    display: flex;
+}
+.temporadasYseries{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    color: black;
+}
+.capitulo{
+    display: flex;
+}
+h2{
+    color: black;
+}
+.seriesRelacionadas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+    color: black;
+}
 footer{
     display: grid;
     grid-template-rows: 2;
@@ -44,4 +103,25 @@ footer{
 }
 .redesSociales{
     text-align: center;
+}
+/*Media Querry Tablet*/
+@media(max-width:768px){
+    .trailer{
+        display: none;
+    }
+}
+/*Media Querry Telefono*/
+@media(max-width:426px){
+    .temp-ep{
+        display: grid;
+    }
+    .acciones{
+        grid-template-columns: 1fr 1fr;
+    }
+    .temporadasYseries{
+        grid-template-columns: 1fr 1fr;
+    }
+    .seriesRelacionadas{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
