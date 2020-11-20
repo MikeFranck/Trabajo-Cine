@@ -81,6 +81,9 @@ footer{
 .redesSociales{
     text-align: center;
 }
+.titulosPelicula{
+    text-align: center;
+}
 /*Media Querry Tablet*/
 @media(max-width: 768px){
     .header{

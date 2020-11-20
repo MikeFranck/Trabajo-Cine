@@ -66,6 +66,11 @@
     font-size: 40px;
     text-align: center;
 }
+.subtitulo{
+    text-decoration: underline; 
+    font-size: 34px;
+    text-align: center;
+}
 .info{
     display: grid;
     grid-template-rows: auto;
@@ -79,8 +84,30 @@
     font-size: 23px;
     color: black;
 }
+.anio{
+    font-size: 23px;
+    color: black;
+}
+.genero{
+    font-size: 23px;
+    color: black;
+    padding: 10px;
+}
+.puntuacion{
+    font-size: 23px;
+    color: black;
+}
+.vistos{
+    font-size: 23px;
+    color: black;
+}
+.idiomas{
+    font-size: 23px;
+    color: black;
+    padding: 10px;
+}
 .duracion{
-    font-size: 12px;
+    font-size: 23px;
     color: black;
 }
 .config{
@@ -113,6 +140,9 @@ iframe{
 .trailer{
     text-align: center;
 }
+.peliculasRelacionadas{
+    text-align: center;
+}
 @media(max-width:768px){
     .container{
         display: grid;
@@ -136,4 +166,36 @@ iframe{
         display: grid;
         grid-template-columns: 1fr;
     }
+    .separacion{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .trailer{
+        display: none;
+    }
+    .titulo{
+        font-size: 28px;
+    }
+    .subtitulo{
+        font-size: 26px;
+    }
+    .anio{
+        font-size: 18px;
+    }
+    .genero{
+        font-size: 18px;
+    }
+    .puntuacion{
+        font-size: 18px;
+    }
+    .vistos{
+        font-size: 18px;
+    }
+    .idiomas{
+        font-size: 18px;
+    }
+    .duracion{
+        font-size: 18px;
+    }
+
 }
