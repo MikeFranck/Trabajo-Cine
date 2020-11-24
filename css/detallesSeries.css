@@ -40,6 +40,34 @@ a{
     color: black;
     text-align: center;
 }
+.subtitulo{
+    color: black;
+    text-align: center;
+}
+.productor{
+    color: black;
+}
+.idiomas{
+    color: black;
+}
+.Estreno{
+    color: black;
+}
+.ultimoEpisodio{
+    color: black;
+}
+.proximoEpisodio{
+    color: black;
+}
+.origen{
+    color: black;
+}
+.reproducciones{
+    color: black;
+}
+.disponible{
+    color: black;
+}
 .genero{
     color: black;
 }
@@ -63,6 +91,7 @@ iframe{
     text-align: center;
     align-items: center;
     width: 100%;
+    display: none;
 }
 .separacion{
     display: grid;
@@ -92,6 +121,22 @@ li{
 .capitulo{
     display: flex;
 }
+.tituloReviews{
+    color: white;
+}
+/*.textoReviews{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px;
+}*/
+/*.autor{
+    color: black;
+    text-align: center;
+}
+.contenido{
+    color: black;
+    text-align: justify;
+}*/
 h2{
     color: black;
 }
@@ -125,6 +170,11 @@ a{
 }
 p{
     text-align: justify;
+    color: black;
+}
+.peliculasRelacionadas{
+    color: whitesmoke;
+    text-align: center;
 }
 /*Media Querry Tablet*/
 @media(max-width:768px){

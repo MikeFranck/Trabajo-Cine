@@ -140,6 +140,18 @@ iframe{
 .trailer{
     text-align: center;
 }
+.tituloReviews{
+    color: whitesmoke;
+}
+.content{
+    color: black;
+}
+p{
+    color: black;
+}
+.nombre{
+    color: white;
+}
 .peliculasRelacionadas{
     text-align: center;
 }

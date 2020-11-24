@@ -15,6 +15,7 @@ window.addEventListener('load', function(){
     let relacionados = document.querySelector('.relacionadas');
     let imagenes = document.querySelector('.extras');
     let peliculasSimilares = document.getElementById('similares');
+    let reviews = document.querySelector('.textoReviews');
     //Traer el id
     let peliculaEntrante = location.search;
     //console.log(peliculaEntrante + '------');
@@ -34,7 +35,7 @@ window.addEventListener('load', function(){
         puntuacion.innerHTML += pelicula.vote_average;
         resumen.innerHTML = pelicula.overview;
         anio.innerHTML += pelicula.release_date;
-        imagen.innerHTML = `<img src="https://image.tmdb.org/t/p/w500${pelicula.poster_path}" class="img" alt="pelicula">`;
+        imagen.innerHTML = `<img src="https://image.tmdb.org/t/p/w500${pelicula.poster_path}" class="img" alt="${pelicula.title}">`;
         for(let i = 0; i< pelicula.genres.length; i++){
             genero.innerHTML += pelicula.genres[i].name;
         }
@@ -84,6 +85,17 @@ window.addEventListener('load', function(){
     .catch(function(error){
         console.log(`El error es ${error}`)
     })*/
+    //Reviews
+    fetch(`https://api.themoviedb.org/3/movie/${id}/reviews?api_key=4bb2cde7041d18aaa0daf73019bbbaf9&language=en-US&page=1`)
+    .then(function(response){
+        return response.json()
+    })
+    .then(function(resenias){
+        console.log(resenias);
+        for(let i = 0; i < resenias.results.length; i++){
+            reviews.innerHTML += `<h3>${resenias.results[i].author}</h3><p class"content">${resenias.results[i].content}</p>`
+        }
+    })
     //Peliculas Relacionadas
     fetch(`https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=4bb2cde7041d18aaa0daf73019bbbaf9&language=en-US&page=1`)
     .then(function(response){

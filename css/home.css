@@ -71,6 +71,13 @@ a{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.imagenPopulares{
+    text-align: center;
+}
+h3{
+    color: white;
+    text-align: center;
+}
 footer{
     display: grid;
     grid-template-rows: 2;
