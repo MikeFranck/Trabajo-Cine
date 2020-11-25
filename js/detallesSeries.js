@@ -97,3 +97,32 @@ window.addEventListener('load', function(){
         }
     })
 })
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    var a = getParameterByName("id")
+    console.log(a)
+}
+
+let x= [ ];
+function agregar(){
+    x.push(getParameterByName("id"))
+    localStorage.setItem("test", JSON.stringify(x));
+    console.log(x)
+}
+function quitar(){
+    let z = x.indexOf(getParameterByName("id"))
+    x.splice(z,1)
+    localStorage.setItem("test", JSON.stringify(x));
+    console.log(x)
+}
+if (localStorage.getItem("test")) {
+    x = JSON.parse(localStorage.getItem("test"));
+} else {
+    // No data, start with an empty array
+    x = [];
+}
+console.log(x)
