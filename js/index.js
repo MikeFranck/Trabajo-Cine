@@ -60,7 +60,7 @@ window.addEventListener('load', function(){
     })
     .then(function(peliculasPopulares){
         console.log(peliculasPopulares)
-        for(let i = 0; i<peliculasPopulares.results.length; i++){
+        for(let i = 0; i< 10; i++){
             tendenciasPeliculas.innerHTML += `<a href="detallesPeliculas.html?id=${peliculasPopulares.results[i].id}"><li> <div class="uk-panel"> <img src="https://image.tmdb.org/t/p/w500/${peliculasPopulares.results[i].poster_path} " alt="${peliculasPopulares.results[i].title}"><div class="uk-position-center  uk-panel"</div></div><h3 class"titulosPeliculas">${peliculasPopulares.results[i].title}</h3></li></a>` 
         //1 er intento
         //peliculasHoy.innerHTML = `<a href="detallesPeliculas.html?id=${peliculasPopulares.results[i].id}"><img class="imagen" src="https://image.tmdb.org/t/p/w500/${peliculasPopulares.results[i].backdrop_path}" alt="${peliculasPopulares.results[i].original_title}"><h2>${peliculasPopulares.results[i].original_title}</h2></a>`
@@ -76,7 +76,7 @@ window.addEventListener('load', function(){
     })
     .then(function(seriesPopulares){
         console.log(seriesPopulares);
-        for(let i = 0; i<seriesPopulares.results.length; i++){
+        for(let i = 0; i< 10; i++){
             tendenciasSeries.innerHTML += `<a href="detallesSeries.html?id=${seriesPopulares.results[i].id}"><li> <div class="uk-panel"> <img src="https://image.tmdb.org/t/p/w500/${seriesPopulares.results[i].poster_path} " alt="${seriesPopulares.results[i].name}"><div class="uk-position-center  uk-panel"</div></div><h3 class"imagenPopulares">${seriesPopulares.results[i].name}</h3></li></a>`  
             //1 er intento
             //seriesMasVistasHoy.innerHTML = `<a href="detallesSeries.html?${seriesPopulares.results[i].id}"><img class="imagen" src="https://image.tmdb.org/t/p/w500${seriesPopulares.results[i].backdrop_path}" alt="${seriesPopulares.results[i].original_name}"><h2>${seriesPopulares.results[i].original_name}</h2></a>`

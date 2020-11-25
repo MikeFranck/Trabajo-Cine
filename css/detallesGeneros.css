@@ -40,6 +40,18 @@
     background-color: black;
     color: whitesmoke;
 }
+.imagenesPelicula{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.imagenesSerie{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.titulosPeliculasYSeries{
+    color: whitesmoke;
+    text-align: center;
+}
 .nombres{
     display: flex;
     justify-content: space-between;
@@ -58,144 +70,43 @@
 }
 .img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
-.titulo{
-    text-decoration: underline; 
+.titulo{ 
     font-size: 40px;
     text-align: center;
+    color: whitesmoke;
 }
-.subtitulo{
-    text-decoration: underline; 
-    font-size: 34px;
+.series{ 
+    font-size: 40px;
     text-align: center;
+    color: whitesmoke;
 }
-.info{
-    display: grid;
-    grid-template-rows: auto;
-    margin-left: 20px;
-}
-.separacion{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.info2{
-    font-size: 23px;
-    color: black;
-}
-.anio{
-    font-size: 23px;
-    color: black;
-}
-.genero{
-    font-size: 23px;
-    color: black;
-    padding: 10px;
-}
-.puntuacion{
-    font-size: 23px;
-    color: black;
-}
-.vistos{
-    font-size: 23px;
-    color: black;
-}
-.idiomas{
-    font-size: 23px;
-    color: black;
-    padding: 10px;
-}
-.duracion{
-    font-size: 23px;
-    color: black;
-}
-.config{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
-    color: black;
-    text-decoration: none;
-}
-.extra{
-    /*display: flex;
-    justify-content: center;*/
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.imgextra{
-    /*width: 450px;
-    height: 250px;
-    padding: 10px;
-    object-fit: cover;*/
-    width: 100%;
-}
-.Resumen{
-    font-size: 20px;
-    color: black;
-}
-iframe{
-    width: 100%;
-}
-.trailer{
-    text-align: center;
-}
-.peliculasRelacionadas{
-    text-align: center;
+h3{
+    color: whitesmoke;
 }
 @media(max-width:768px){
-    .container{
-        display: grid;
-        grid-template-columns: 60% 40%;
+    .imagenesPelicula{
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    .extra{
-        display: none;
-    }
-    .config{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .imagenesSerie{
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 @media(max-width: 426px){
-    .container{
-        display: grid;
-        grid-template-columns: 50% 50%;
-
+    .imagenesPelicula{
+        grid-template-columns: 1fr 1fr;
     }
-    .config{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .separacion{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .trailer{
-        display: none;
+    .imagenesSerie{
+        grid-template-columns: 1fr 1fr;
     }
     .titulo{
         font-size: 28px;
     }
-    .subtitulo{
-        font-size: 26px;
+    .series{
+        font-size: 28px;
     }
-    .anio{
-        font-size: 18px;
-    }
-    .genero{
-        font-size: 18px;
-    }
-    .puntuacion{
-        font-size: 18px;
-    }
-    .vistos{
-        font-size: 18px;
-    }
-    .idiomas{
-        font-size: 18px;
-    }
-    .duracion{
-        font-size: 18px;
+    .titulosPeliculasYSeries{
+        font-size: 22px;
     }
 
 }
