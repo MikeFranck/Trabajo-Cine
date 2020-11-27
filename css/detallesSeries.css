@@ -156,6 +156,12 @@ footer{
     background-color: black;
     color: whitesmoke;
 }
+.tmdb{
+    text-align: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+}
 .nombres{
     display: flex;
     justify-content: space-between;

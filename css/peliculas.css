@@ -81,6 +81,12 @@ footer{
 .redesSociales{
     text-align: center;
 }
+.tmdb{
+    text-align: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+}
 .titulosPelicula{
     text-align: center;
 }

@@ -82,6 +82,12 @@ footer{
 .redesSociales{
     text-align: center;
 }
+.tmdb{
+    text-align: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+}
 /*Media Querry Tablet*/
 @media(max-width: 768px){
     .header{
