@@ -65,16 +65,6 @@ window.addEventListener('load', function(){
             productor.innerHTML += detallesSerie.created_by[i].name
         }
     })
-    //Season
-    fetch(`https://api.themoviedb.org/3/tv/${id}/season/{season_number}?api_key=4bb2cde7041d18aaa0daf73019bbbaf9&language=en-US`)
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(temporada){
-        console.log(temporada)
-    })
-    //Episodios
-    fetch(``)
     //Reviews
     fetch(`https://api.themoviedb.org/3/tv/${id}/reviews?api_key=4bb2cde7041d18aaa0daf73019bbbaf9&language=en-US&page=1`)
     .then(function(response){
