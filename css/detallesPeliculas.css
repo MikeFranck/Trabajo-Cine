@@ -93,6 +93,10 @@
     color: black;
     padding: 10px;
 }
+.linkGeneros{
+    text-decoration: none;
+    color: black;
+}
 .puntuacion{
     font-size: 23px;
     color: black;

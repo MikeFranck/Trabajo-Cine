@@ -37,7 +37,7 @@ window.addEventListener('load', function(){
         anio.innerHTML += pelicula.release_date;
         imagen.innerHTML = `<img src="https://image.tmdb.org/t/p/w500${pelicula.poster_path}" class="img" alt="${pelicula.title}">`;
         for(let i = 0; i< pelicula.genres.length; i++){
-            genero.innerHTML += pelicula.genres[i].name;
+            genero.innerHTML += `<a class="linkGeneros" href="detallesGeneros.html?id=${pelicula.genres[i].id}&name=${pelicula.genres[i].name}">${pelicula.genres[i].name}</a>`;
         }
         reproduciones.innerHTML += pelicula.popularity
         for(let i = 0; i< pelicula.spoken_languages.length; i++){

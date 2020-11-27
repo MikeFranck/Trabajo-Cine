@@ -43,7 +43,8 @@ window.addEventListener('load', function(){
         titulo.innerHTML = detallesSerie.name;
         subtitulo.innerHTML = `"${detallesSerie.tagline}"`
         for(let i = 0; i < detallesSerie.genres.length; i++){
-            genero.innerHTML += detallesSerie.genres[i].name;
+            //genero.innerHTML += detallesSerie.genres[i].name;
+            genero.innerHTML += `<a class="linkGeneros" href="detallesGeneros.html?id=${detallesSerie.genres[i].id}&name=${detallesSerie.genres[i].name}">${detallesSerie.genres[i].name}</a>`
         }
         estreno.innerHTML += detallesSerie.first_air_date;
         resumen.innerHTML = detallesSerie.overview
@@ -97,7 +98,7 @@ window.addEventListener('load', function(){
         }
     })
 })
-
+//Agregar
 function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
