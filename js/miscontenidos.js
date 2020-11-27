@@ -3,8 +3,7 @@ window.addEventListener('load', function(){
     let masDestacadas = document.querySelector('#masDestacadas');
     let alAireProximamente = document.querySelector('#alAireProximamente');
     let populares = document.querySelector('#masPopulares');
-    let peliculasLista = document.querySelector('#peliculasLista');
-    //Series
+
     if (localStorage.getItem("test")) {
         x = JSON.parse(localStorage.getItem("test"));
     } else {
@@ -12,16 +11,7 @@ window.addEventListener('load', function(){
         x = [];
     }
     console.log(x)
-    for(let i = 0; i < x.length; i++){
-        console.log(x)
-        populares.innerHTML += `<a href="detallesSeries.html?id=${x[i]}"><img class="imagenPopulares" src="https://image.tmdb.org/t/p/w500${x.results[i].poster_path}" alt="${x.results[i].name}"><h2 class="titulosPelicula">${x.results[i].name}</h2></a>`;
-    }
-    //Peliculas
-    for(let i = 0; i < x.length; i++){
-        console.log(x)
-        peliculasLista.innerHTML += `<a href="detallesSeries.html?id=${x[i]}"><img class="imagenPopulares" src="https://image.tmdb.org/t/p/w500${x.results[i].poster_path}" alt="${x.results[i].name}"><h2 class="titulosPelicula">${x.results[i].name}</h2></a>`;
-    }
-    /*fetch('https://api.themoviedb.org/3/tv/popular?api_key=4bb2cde7041d18aaa0daf73019bbbaf9&language=en-US&page=1')
+    fetch('https://api.themoviedb.org/3/tv/popular?api_key=4bb2cde7041d18aaa0daf73019bbbaf9&language=en-US&page=1')
     .then(function(response){
         return response.json();
     })
@@ -29,9 +19,8 @@ window.addEventListener('load', function(){
         console.log(masPopulares);
         for(let i = 0; i < x.length; i++){
             console.log(x[i])
-            populares.innerHTML += `<a href="detallesSeries.html?id=${x[i]}"><img class="imagenPopulares" src="https://image.tmdb.org/t/p/w500${masPopulares.results[i].poster_path}" alt="${masPopulares.results[i].name}"><h2 class="titulosPelicula">${masPopulares.results[i].name}</h2></a>`
+            populares.innerHTML += `<a href="detallesSeries.html?id=${x[i]}"></a>></a><img class="imagenPopulares" src="https://image.tmdb.org/t/p/w500${masPopulares.results[i].poster_path}" alt="${masPopulares.results[i].name}"><h2 class="titulosPelicula">${masPopulares.results[i].name}</h2>`
             //populares.innerHTML += `<a href="detalleSeries.html?id=${masPopulares.results[i].id}"><img class="imagenPopulares" src="https://image.tmdb.org/t/p/w500/${masPopulares.results[i].backdrop_path}" alt="${masPopulares.results[i].original_name}"><h2 class="titulosPelicula">${masPopulares.results[i].original_name}</h2></a>`
         }
     })
-    //*/
 })

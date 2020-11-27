@@ -97,7 +97,7 @@ window.addEventListener('load', function(){
         }
     })
 })
-//Agregar y quitar
+
 function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
